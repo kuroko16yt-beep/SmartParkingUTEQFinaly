@@ -12,7 +12,7 @@
 
 import React from 'react'
 import CIcon from '@coreui/icons-react'
-import { cilCarAlt, cilSpeedometer } from '@coreui/icons'
+import { cilCarAlt, cilSpeedometer, cilCamera } from '@coreui/icons'
 import { CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
@@ -28,17 +28,23 @@ const _nav = [
     icon: <CIcon icon={cilCarAlt} customClassName="nav-icon" />,
   },
   {
-  component: CNavItem,
-  name: 'Puestos',
-  to: '/parqueadero/puestos',
-  icon: <CIcon icon={cilCarAlt} customClassName="nav-icon" />,
-},
-{
-  component: CNavItem,
-  name: 'Registros de estacionamiento',
-  to: '/parqueadero/registros',
-  icon: <CIcon icon={cilCarAlt} customClassName="nav-icon" />,
-}
+    component: CNavItem,
+    name: 'Puestos',
+    to: '/parqueadero/puestos',
+    icon: <CIcon icon={cilCarAlt} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Registros de estacionamiento',
+    to: '/parqueadero/registros',
+    icon: <CIcon icon={cilCarAlt} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Monitoreo de entrada',
+    to: '/parqueadero/monitoreo-entrada',
+    icon: <CIcon icon={cilCamera} customClassName="nav-icon" />,
+  },
 ]
 
 export default _nav
